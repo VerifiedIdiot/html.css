@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 520px;
+            border: 1px solid black;
+            padding: 20px 40px;
+            margin: 0;
+        }
+        legend {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-left: 2px;
+            display: inline-block;
+        }
+        .content {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>프론트앤드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr>
+    <form action="#">
+        <legend><b>개인정보</b></legend>
+            <div class="content">
+                <label for="name">이름</label>
+                <input type="text" id="name" size=15><br>
+                <label for="number">연락처</label>
+                <input type="text" id="number" size=15>
+            </div>
+            <br><br>
+        <legend><b>지원 분야</b></legend>
+            <div class="content">                    
+                <input type="radio" id="publish" name="job" value="publish">
+                <label for="publish">웹퍼블리싱</label><br>
+                <input type="radio" id="front" name="job" value="front">
+                <label for="front">웹 프론트엔드</label><br>
+                <input type="radio" id="mobile"name="job" value="mobile">
+                 <label for="mobile">모바일 앱</label><br>
+            </div>
+            <br>
+        <legend><b>지원동기</b></legend>
+            <textarea id="desc" cols="70" rows="5" readonly></textarea>
+            <button type="submit" value="접수">접수하기</button>
+            <button type="reset" value="초기화">다시쓰기</button>
+        </form>
+    </div>
+    
+</body>
+</html>
