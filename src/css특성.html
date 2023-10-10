@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Nanum Gothic';
+        }
+        .parent {
+            font-size: 1vw;
+            /*키워드 표기법 : 150여개의 컬러 이름이 있음 */
+            background-color: blanchedalmond;
+        }
+        .child {
+            font-size: 2vw;
+            background-color: rgb(255, 0, 0);
+        }
+        .grandChild {
+            font-size: 3vw;
+            /* 4번째 값은 투명도를 의미 : 1에 가까우면 불투명, 0에 가까우면 투명 */
+            background-color: rgba(0, 0, 255,0.5);
+        }
+        h1 {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>부모의 폰트 크기 입니다.</p>
+    
+        <div class="child">
+            <p>자식의 폰트 크기 입니다.</p>
+                <div class="grandChild">
+                    <p>자식의 자식 폰트 크기입니다.</p>
+                </div>
+            </div>
+        </div>
+        <h1>hex값으로 색상을 지정 합니다.</h1>
+</body>
+</html>
