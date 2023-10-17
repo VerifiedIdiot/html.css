@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            height: 400px;
+            width: 400px;
+            background-color: bisque;
+            display: grid;
+            /* auto-fit : 자동 채우기, 컨테이너 기준 */
+            /* auto-fill : 자동 채우기, 아이템이 기준 */
+            grid-template-columns: 100px 100px 199px;
+            /* grid-template-rows: repeat(2, minmax(60px, auto)); */
+            justify-content: start;
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: royalblue;
+            border: 1px solid orangered;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid-item:nth-child(odd) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">그박 1</div>
+        <div class="grid-item">그박 2</div>
+        <div class="grid-item">그박 3</div>
+        <div class="grid-item">그박 4</div>
+        <div class="grid-item">그박 5</div>
+    </div>
+</body>
+</html>
